@@ -71,9 +71,9 @@ function validateParam(obj, prop, validator, defaultValue) {
     }
   }
 }
-exports.validateParam = validateParamfunction 
-  
-formatArticleSlug(title) {
+exports.validateParam = validateParam
+
+function formatArticleSlug(title) {
   if (!title) return ''
   return String(title).toLowerCase().trim().replace(/\s+/g, '-')
 }
